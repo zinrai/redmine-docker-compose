@@ -22,7 +22,7 @@ services:
     # https://hub.docker.com/_/redmine
     image: redmine:6.1.0-trixie
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3000:3000"
     container_name: redmine-app
     restart: unless-stopped
     depends_on:
